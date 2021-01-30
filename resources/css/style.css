@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@200;400;700&family=Shadows+Into+Light&family=Special+Elite&display=swap');
+
+    /* Global Styles */
+
+body {
+    background-color: #fff;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main > h2 {
+    text-align: center;
+    font-size: 5rem;
+    margin: 7rem auto;
+    font-family: 'Special Elite', monospace;
+}
+
+main > h2 span {
+    color: #d00;
+}
+
+
+    /* header */
+
+header {
+    width: fit-content;
+    font-family: 'Special Elite';/*
+    text-align: center;*/
+    font-size: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem auto;
+}
+
+header img {
+    height: 8rem;
+}
+
+#header-image {
+    height: 6rem;
+    border-radius: 50px;
+}
+
+h1 {
+    color: #222;
+    background-color: #fff;
+    margin: 0 2rem;
+}
+
+h1 span {
+    color: #d00;
+}
+
+nav {
+    background-color: #fff;
+    font-family: 'Shadows Into Light';
+    border-bottom: 2px solid #222;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+nav a {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+    /* hero banner */
+
+#mission {
+    background-image: url(../images/banner2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #111;
+}
+
+#mission h2 {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2rem;
+    width: 66%;
+    text-align: right;
+    font-family: 'Special Elite', monospace;
+    font-size: 2.5rem;
+    align-self: flex-start;
+    border-radius: 0 50px 50px 0;
+}
+
+#mission h2 span {
+    background-color: #111;
+    color: #eee;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#mission p {
+    display: inline-block;
+    align-self: flex-end;
+    font-family: 'Imbue', sans-serif;
+    color: #fff;
+    font-size: 4rem;
+    padding: 2rem;
+    background-color: rgba(10, 10, 10, 0.8);
+    width: 66%;
+    border-radius: 50px 0 0 50px;
+}
+
+#mission p span {
+    color: #d00;
+}
+
+    /* product gallery */
+
+#products {
+    width: 100%;
+}
+
+.gallery-banner {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    border-top: 1px solid #111;
+}
+
+#products h2 {
+    width: 66%;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-family: 'Special Elite', monospace;
+    color: #111;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 0 50px 50px 0;
+    text-align: center;
+}
+
+#products  h2 + h2 {
+    color: #d00;
+    background-color: rgba(10, 10, 10, 0.9);
+    align-self: flex-end;
+    border-radius: 50px 0 0 50px;
+    padding: 1rem
+}
+
+.spacer {
+    visibility: hidden;
+}
+
+.gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+    font-family: 'Imbue', sans-serif;
+}
+
+.gallery figure {
+    max-width: 20%;
+    margin: 5%;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: -10px 10px 10px #111;
+    border: 1px solid #111;
+}
+
+figcaption {
+    font-size: 2.5rem;
+    color: #111;
+    text-decoration: #d00 underline;
+    padding: 2rem 0;
+}
+
+
+    /* team */
+
+.team-banner {
+    background-image: url(../images/farm.jpg);
+    height: 1200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Special Elite', monospace;
+    font-size: 2.5rem;
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #111;
+}
+
+.team-banner h2 {
+    background-color: rgba(10, 10, 10, 0.9);
+    color: #d00;
+    width: 75%;
+    border-radius: 0 50px 50px 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+.team-banner h2 + h2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #111;
+    align-self: flex-end;
+    width: 75%;
+    padding: 1rem;
+    border-radius: 50px 0 0 50px;
+}
+
+.team-gallery {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: #222;
+    padding: 10rem 0;
+}
+
+.team-gallery figure {
+    width: 20%;
+}
+
+.team-gallery img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.team-gallery figcaption {
+    font-family: 'Shadows Into Light';
+    text-decoration: none;
+    color: #eee;
+    font-weight: bold;
+}
+
+.team-gallery p {
+    font-family: 'Imbue', Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    color: #d00;
+}
+
+
+    /* footer */
+
+footer {
+    background-image: url(../images/footer.jpg);
+    width: 100%;
+    background-position: bottom;
+    background-size: cover;
+    text-align: center;
+}
+
+footer a {
+    font-family: 'Imbue',Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    color: #eee;
+    letter-spacing: 2px;
+}
+
+#footer-box {
+    background-color: rgba(10, 10, 10, 0.8);
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#footer-box ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer-box li {
+    width: 40%;
+    margin: 3rem;
+}
+
+#footer-box h2 {
+    font-family: 'Special Elite', 'Courier New', Courier, monospace;
+    color: #eee;
+    font-size: 2.5rem;
+}
+
+#footer-box h2 span {
+    color: #d00;
+}
+
+    /* media queries */
+
+@media only screen and (max-width: 460px) {
+
+    main > h2 {
+        font-size: 3rem;
+        margin: 4rem;
+    }
+    
+        /* header */
+    
+    h1 {
+        font-size: 30%;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header img {
+        height: rem;
+    }
+
+    #header-image {
+        display: none;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+        /* hero */
+    
+    #mission {
+        width: 100vw;
+        height: 400px;
+        background-size: cover;
+    }
+    
+    #mission h2 {
+        font-size: 2rem;
+        padding: 1rem;
+        width: 100%;
+        border-radius: 0;
+        text-align: center;
+    }
+
+    #mission h2 span {
+        padding: 0.25rem
+    }
+
+    #mission p {
+        font-size: 2rem;
+        width: 100%;
+        border-radius: 0;
+        padding: 1rem;
+    }
+
+        /* gallery */
+    
+    .gallery-banner{
+        height: 700px;
+    }
+
+    .gallery figure {
+        max-width: 75%;
+    }
+
+    #products h2 {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    #products h2 + h2 {
+        border-radius: 0;
+    }
+
+        /* team */
+
+    .team-banner {
+        height: 750px;
+    }
+
+    #team {
+        height: fit-content;
+    }
+
+    .team-gallery {
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem 0;
+    }
+
+    .team-gallery figure {
+        width: 80%;
+        padding: 2rem 0;
+        margin: 0;
+    }
+
+        /* footer */ 
+    
+    #footer-box li {
+        width: 100%;
+        margin: 1rem;
+    }
+
+    footer {
+        font-size: 2rem;
+    }
+}
